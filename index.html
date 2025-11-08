@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PS_DM 학습 허브</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <header class="app-header">
+    <div class="brand">
+      <div class="logo">📁</div>
+      <div class="title-wrap">
+        <h1>PS_DM 학습 허브</h1>
+        <p class="subtitle">첨부파일을 섹션별 폴더로 시각화한 웹사이트</p>
+      </div>
+    </div>
+    <div class="search-wrap">
+      <input id="searchInput" type="text" placeholder="검색: 섹션/내용을 입력하세요"/>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <aside class="sidebar glass">
+      <h2>섹션 폴더</h2>
+      <nav id="folderTree" class="tree"></nav>
+    </aside>
+    <section class="content glass">
+      <div class="breadcrumb" id="breadcrumb"></div>
+      <div id="gridView" class="grid"></div>
+      <div id="listView" class="list hidden"></div>
+      <div id="detailView" class="detail hidden"></div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <span>© 2025 PS_DM Study Hub</span>
+    <div class="actions">
+      <button id="viewGridBtn" class="pill active">폴더 보기</button>
+      <button id="viewListBtn" class="pill">자료 리스트</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
